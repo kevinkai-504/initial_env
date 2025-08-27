@@ -1,5 +1,5 @@
 services:
   test:
     build: .
-    volumes:
-      - ./:/app
+    env_file:
+      - ./.env
